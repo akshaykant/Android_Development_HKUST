@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatClient"
+    android:background="#eaeaea">
+
+    <!--To include toolbar to the layout which accepts tool_bar.xml  and can add features to the top of the layout-->
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:elevation="5dp"
+        ></include>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="5pt"
+        android:id="@+id/linearLayout"
+        android:background="#ffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:elevation="5dp"
+        android:layout_margin="0pt">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/messageText"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:hint="@string/messagehint" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendButton"
+            android:src="@drawable/ic_send_black_36dp"
+            android:background="@android:drawable/btn_default_small" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/tool_bar"
+        android:padding="5pt"
+        android:background="@null">
+
+        <android.support.v7.widget.RecyclerView
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/messageList"
+            android:transcriptMode="alwaysScroll"
+            android:stackFromBottom="true"
+            android:divider="@null"
+            android:background="@null" />
+    </LinearLayout>
+
+</RelativeLayout>

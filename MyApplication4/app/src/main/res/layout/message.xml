@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="2pt"
+        android:layout_marginTop="2pt"
+        android:layout_marginRight="20pt"
+        android:layout_marginBottom="2pt">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="message"
+            android:id="@+id/messageTextView"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:editable="false"
+            android:layout_alignParentTop="true"
+            android:textSize="10pt"
+            android:layout_marginRight="2pt"
+            android:layout_marginLeft="2pt"
+            android:layout_marginTop="2pt"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Time"
+            android:id="@+id/timeTextView"
+            android:layout_below="@+id/messageTextView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="2pt"
+            android:layout_marginLeft="2pt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="2pt"
+            android:textSize="8sp"
+            android:layout_gravity="right" />
+    </LinearLayout>
+</RelativeLayout>

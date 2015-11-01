@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akant.myapplication5.Contacts">
+
+    <include
+        android:id="@+id/tool_bar_contacts"
+        layout="@layout/tool_bar"
+        android:elevation="5dp"></include>
+
+    <ListView
+        android:id="@+id/friendListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tool_bar_contacts"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

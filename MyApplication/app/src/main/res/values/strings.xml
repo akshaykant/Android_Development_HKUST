@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TimeGreetFriend</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="greetstring">"Good Day "</string>
+    <string name="goodnight">"Good Night "</string>
+    <string name="goodmorning">"Good Morning "</string>
+    <string name="goodafternoon">"Good Afternoon "</string>
+    <string name="goodevening">"Good Evening "</string>
+    <string name="title_activity_show_message">ShowMessage</string>
+
+
+</resources>
