@@ -8,6 +8,6 @@ UI Design: Widgets and Layouts, UI Events, Event Listeners
 
 2D graphics: Canvas/Drawing using a view
 
-Multimedia: Audio playback and MediaPlayer
+Multimedia: Audio playback and Media Player
 
-Network support: AsyncTask, HttpURLConnection
+Network support: AsyncTask, httpURLConnection
